@@ -4,6 +4,7 @@ import './App.css';
 import List from './components/Lists';
 import AddToList from './components/AddToList';
 import Navbar from './components/Navbar';
+import { BrowserRouter as Router } from 'react-router-dom';
 export interface IState {
   people: {
     name: string,
@@ -28,12 +29,12 @@ function App() {
   //   setPeople([...people, { name: 'new person' }]);
   // }
   return (
-    <div className="App">
+    <Router >
       {/* <h1>People invited</h1>
       <List people={people} />
       <AddToList people={people} setPeople={setPeople} /> */}
       <Navbar />
-    </div>
+    </Router>
   );
 }
 
