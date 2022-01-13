@@ -4,7 +4,6 @@ import { Link as LinkR } from 'react-router-dom';
 var Scroll = require('react-scroll');
 
 export const SidebarContainer = styled.aside<{ isOpen: any }>`
-console.log('isOpen', isOpen);
 position:fixed;
 z-index:999;
 width:100%;
@@ -17,8 +16,7 @@ transition:0.3s ease-in-out;
 opacity: ${(props) => props.isOpen ? 1 : 0};
 top: ${(props) => props.isOpen ? '0' : '-100%'};
 `;
-// opacity: ${({ isOpen }) => (isOpen ? '100%' : 0)};
-// top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+
 
 export const CloseIcon = styled(FaTimes)`
     color:#fff;
