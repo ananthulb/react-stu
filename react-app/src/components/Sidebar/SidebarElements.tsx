@@ -3,7 +3,8 @@ import { FaTimes } from "react-icons/fa";
 import { Link as LinkR } from 'react-router-dom';
 var Scroll = require('react-scroll');
 
-export const SidebarContainer = styled.aside`
+export const SidebarContainer = styled.aside<{ isOpen: any }>`
+console.log('isOpen', isOpen);
 position:fixed;
 z-index:999;
 width:100%;
@@ -11,10 +12,10 @@ height:100%;
 background:#0d0d0d;
 display:grid;
 align-items:center;
-top:0;
 left:0;
 transition:0.3s ease-in-out;
-top:0;
+opacity: ${(props) => props.isOpen ? 1 : 0};
+top: ${(props) => props.isOpen ? '0' : '-100%'};
 `;
 // opacity: ${({ isOpen }) => (isOpen ? '100%' : 0)};
 // top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
@@ -80,6 +81,7 @@ text-decoration: none;
     color: #010606;
 }
 `;
+
 export const SidebarMenu = styled.ul`
 display:grid;
 grid-template-columns:1fr;
