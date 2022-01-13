@@ -60,7 +60,7 @@ text-transform: uppercase;
 margin-bottom: 16px;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.h1<{ lightText: any }>`
 margin-bottom: 24px;
 font-size: 48px;
 line-height: 1.1;
@@ -73,7 +73,7 @@ color: ${(props) => props.lightText ? '#f7f8fa' : '#0160606'};
 
 `;
 
-export const SubTitle = styled.p`
+export const SubTitle = styled.p<{ darkText: any }>`
 max-width: 440px;
 margin-bottom: 35px;
 font-size: 18px;
