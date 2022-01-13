@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div<{ lightBg: any }>`
-    COLOR: #fff;
-    background: ${(props) => props.lightBg ? '#f9f9f9' : '#0160606'};
+    color: #fff;
+    background: ${(props) => props.lightBg ? '#f9f9f9' : '#010606'};
 
     @media screen and (max-width: 768px) {
-        padding:100px 0;
+        padding: 100px 0;
     }
 `;
 
@@ -65,7 +65,7 @@ margin-bottom: 24px;
 font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
-color: ${(props) => props.lightText ? '#f7f8fa' : '#0160606'};
+color: ${(props) => props.lightText ? '#f7f8fa' : '#010606'};
 
 @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -78,7 +78,7 @@ max-width: 440px;
 margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
-color: ${(props) => props.darkText ? '#0160606' : '#fff'};
+color: ${(props) => props.darkText ? '#010606' : '#fff'};
 `;
 
 export const BtnWrap = styled.div`

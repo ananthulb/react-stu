@@ -8,7 +8,7 @@ const HeroSection = () => {
     const onHover = () => {
         setHover(!hover);
     }
-
+    console.log('HeroSection video', video);
     return (
         <HeroContainer id="home">
             <HeroBg>
