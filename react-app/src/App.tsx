@@ -5,6 +5,8 @@ import List from './components/Lists';
 import AddToList from './components/AddToList';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+
 export interface IState {
   people: {
     name: string,
@@ -33,6 +35,7 @@ function App() {
       {/* <h1>People invited</h1>
       <List people={people} />
       <AddToList people={people} setPeople={setPeople} /> */}
+      <Sidebar />
       <Navbar />
     </Router>
   );
