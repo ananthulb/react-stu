@@ -3,6 +3,7 @@ import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Top
 import { Button } from '../ButtonElement';
 // var Scroll = require('react-scroll');
 // let Button = Scroll.Link;
+// import { Button } from 'react-scroll'
 const InfoSection: any = (props: any) => {
     console.log('InfoSection props', props);
     return (
@@ -18,7 +19,7 @@ const InfoSection: any = (props: any) => {
                                 <Heading lightText={props.lightText}>{props.headline}</Heading>
                                 <SubTitle darkText={props.darkText}>{props.description}</SubTitle>
                                 <BtnWrap>
-                                    <Button to="home" smooth={true} duration={500} spy={true} exact="true" offset={-80} primary={props.primary ? 1 : 0} dark={props.dark ? 1 : 0} dark2={props.dark2 ? 1 : 0}>{props.buttonLabel}</Button>
+                                    <Button to="home" smooth={true} duration={500} spy={true} exact="true" offset={-80} primary={props.primary ? 1 : 0} dark={props.dark ? 1 : 0} dark2={props.dark2 ? 1 : 0} >{props.buttonLabel}</Button>
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>

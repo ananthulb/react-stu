@@ -83,7 +83,7 @@ color: ${(props) => props.darkText ? '#010606' : '#fff'};
 
 export const BtnWrap = styled.div`
 display:flex;
-justify-content:center;
+justify-content:flex-start;
 `;
 
 export const ImgWrap = styled.div`
