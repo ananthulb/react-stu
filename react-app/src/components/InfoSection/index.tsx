@@ -16,7 +16,7 @@ const InfoSection: any = (props: any) => {
                                 <Heading lightText={props.lightText}>{props.headline}</Heading>
                                 <SubTitle darkText={props.darkText}>{props.description}</SubTitle>
                                 <BtnWrap>
-                                    <Button to="home" smooth={true} duration={500} spy={true} exact={true} offset={-80} primary={props.primary ? 1 : 0} dark={props.dark ? 1 : 0} >{props.buttonLabel}</Button>
+                                    <Button to="home" smooth={true} duration={500} spy={true} exact="true" offset={-80} primary={props.primary ? 1 : 0} dark={props.dark ? 1 : 0} >{props.buttonLabel}</Button>
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
